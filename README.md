@@ -29,6 +29,8 @@ To build the application, use CMake:
 
 The plugins-app.exe (or plugins-app if using gcc) will be locaated in the `cpp-plugins/app/build/bin` directory
 
+### Running the client application
+
 To run the application, you must pass in the path to the plugin as an argument:
 
     plugin-app.exe path/to/cpp-plugins/logger/build/bin/liblogger.dll
