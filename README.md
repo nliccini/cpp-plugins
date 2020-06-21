@@ -3,7 +3,7 @@ A basic example of creating a C++ plugin and dynamically loading it into a clien
 
 ## Requirements
 
-Your system must have `boost` and `cmake` installed.
+Your system must have `boost` and `cmake` installed along with your basic compile tools (MSVC or gcc).
 
     sudo apt-get install build-essential cmake libboost-all-dev
 
@@ -33,7 +33,7 @@ To build the application, use CMake:
     cmake .. -DBOOST_ROOT=path/to/boost -DINTERFACE_INCLUDE_DIR=path/to/cpp-plugins/app/inc
     cmake --build .
 
-The plugins-app.exe (or plugins-app if using gcc) will be locaated in the `cpp-plugins/app/build/bin` directory
+The plugins-app.exe (or plugins-app if using gcc) will be located in the `cpp-plugins/app/build/bin` directory
 
 ### Running the client application
 
@@ -49,11 +49,11 @@ For Linux:
     
 ## How it Works
 
-Motivation: 
+### Motivation
 
 You have an application that has some requirements, so you define an interface. Someone else says they know how to fulfill your requirements by implementing your interface, but they want their code to be protected/private, so they want to implement your interface and provide you with a dynamically linked library which has all the functionality but doesn't expose any source code or implementation details. This is easy if you follow our example here!
 
-Implementation:
+### Implementation
 
 First we define an abstract interface: `i::logger`. This allows the client application to understand what functionality is expected by any concrete implementations that may come from loading a plugin. This also allows any developer who wants to create a plugin to have a strict set of requirements for their plugin.
 
