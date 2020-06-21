@@ -47,9 +47,13 @@ For Linux:
 
     ./plugin-app path/to/cpp-plugins/logger/build/bin/liblogger.so
     
-## The Concept
+## How it Works
 
-Motivation: You have an application that has some requirements, so you define an interface. Someone else says they know how to fulfill your requirements by implementing your interface, but they want their code to be protected/private, so they want to implement your interface and provide you with a dynamically linked library which has all the functionality but doesn't expose any source code or implementation details. This is easy if you follow our example here!
+Motivation: 
+
+You have an application that has some requirements, so you define an interface. Someone else says they know how to fulfill your requirements by implementing your interface, but they want their code to be protected/private, so they want to implement your interface and provide you with a dynamically linked library which has all the functionality but doesn't expose any source code or implementation details. This is easy if you follow our example here!
+
+Implementation:
 
 First we define an abstract interface: `i::logger`. This allows the client application to understand what functionality is expected by any concrete implementations that may come from loading a plugin. This also allows any developer who wants to create a plugin to have a strict set of requirements for their plugin.
 
