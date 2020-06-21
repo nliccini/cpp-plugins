@@ -37,9 +37,13 @@ The plugins-app.exe (or plugins-app if using gcc) will be locaated in the `cpp-p
 
 ### Running the client application
 
-To run the application, you must pass in the path to the plugin as an argument:
+To run the application, you must pass in the path to the plugin as an argument. For Windows:
 
     plugin-app.exe path/to/cpp-plugins/logger/build/bin/liblogger.dll
+    
+For Linux:
+
+    ./plugin-app.exe path/to/cpp-plugins/logger/build/bin/liblogger.so
     
 ## The Concept
 
