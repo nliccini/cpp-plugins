@@ -3,9 +3,9 @@ A basic example of creating a C++ plugin and dynamically loading it into a clien
 
 ## Requirements
 
-Your system must have `boost` installed.
+Your system must have `boost` and `cmake` installed.
 
-    sudo apt-get install libboost-all-dev
+    sudo apt-get install build-essential cmake libboost-all-dev
 
 ## Usage
 
