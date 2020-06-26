@@ -1,7 +1,7 @@
 #ifndef __LOGGER_H
 #define __LOGGER_H
 
-#if defined(_MSC_VER)
+#if defined(_WIN32)
     // Windows
     #define EXPORT __declspec(dllexport)
 #else
